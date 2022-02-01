@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid system</title>
+    <!-- Bootstrap css content delivery network(CDN) link to use bootstrap CSS framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .container {
+            border: 2px solid black;
+            margin-bottom: 74px;
+        }
+
+        .col-md-6 {
+            border: 2px solid darkred;
+        }
+
+        .img-fluid {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- gird system only works inside container -->
+    <!-- in a row there are 12 units(columns) total -->
+    <h1 class="display-1 text-center text-success">the grid system</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 bg-primary">I am 6 units</div>
+            <div class="col-6 bg-info">I am 6 units</div>
+        </div>
+        <div class="row">
+            <div class="col-4 bg-success">I am 4 units</div>
+            <div class="col-8 bg-danger">I am 8 units</div>
+        </div>
+        <div class="row">
+            <div class="col-2 bg-primary">I am 2 units</div>
+            <div class="col-7 bg-info">I am 7 units</div>
+            <div class="col-3 bg-secondary">I am 3 units</div>
+        </div>
+        <div class="row">
+            <div class="col-2 bg-danger">I am 2 units</div>
+            <div class="col-7 bg-success">I am 7 units</div>
+        </div>
+        <!-- to equally split columns we can use only col -->
+        <div class="row">
+            <div class="col bg-secondary">I am autosized</div>
+            <div class="col bg-info">I am autosized</div>
+            <div class="col bg-primary">I am autosized</div>
+            <div class="col bg-success">I am autosized</div>
+        </div>
+        <div class="row">
+            <div class="col bg-dark">I am autosized</div>
+            <div class="col-10 bg-danger">I am autosized</div>
+            <div class="col bg-primary">I am autosized</div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="display-5 ">Responsive Grid system</h1>
+        <div class="row">
+            <!-- below md(medium breakpoint) (for specific breakpoints check official website of bootstrap) each div takes the entire row (12 units)-->
+            <div class="col-md-6 col-xl-3 bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                tenetur, minus,
+                maxime unde sed omnis, autem velit nisi recusandae hic ullam provident. Blanditiis a omnis eum deleniti
+                labore aperiam et harum ratione rem iure?
+            </div>
+            <div class="col-md-6 col-xl-3 bg-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                tenetur, minus,
+                maxime unde sed omnis, autem velit nisi recusandae hic ullam provident. Blanditiis a omnis eum
+                deleniti labore aperiam et harum ratione rem iure?
+            </div>
+            <div class="col-md-6 col-xl-3 bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                tenetur, minus,
+                maxime unde sed omnis, autem velit nisi recusandae hic ullam provident. Blanditiis a omnis eum deleniti
+                labore aperiam et harum ratione rem iure?
+            </div>
+            <div class="col-md-6 col-xl-3 bg-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                tenetur, minus,
+                maxime unde sed omnis, autem velit nisi recusandae hic ullam provident. Blanditiis a omnis eum
+                deleniti labore aperiam et harum ratione rem iure?
+            </div>
+        </div>
+    </div>
+    <h1 class="display-5">Responsive images</h1>
+    <div class="container">
+        <div class="row">
+            <!-- g-0 for no gutters (for no gaps between each div) -->
+            <div class="col-xl-4 col-md-6 g-0">
+                <img src="https://media.istockphoto.com/photos/lion-portrait-picture-id1174903057?b=1&k=20&m=1174903057&s=170667a&w=0&h=EQkfodILiNciEKfTcetyOsbbD5aMeOZqiO8vHHvl0LM="
+                    class="img-fluid" alt="">
+            </div>
+            <div class="col-xl-4 col-md-6 g-0">
+                <img src="https://media.istockphoto.com/photos/male-lion-in-masai-mara-national-park-picture-id1210769568?b=1&k=20&m=1210769568&s=170667a&w=0&h=Wy-s_mh8y2oaXB5EjxB8MRLpv-d5QaVYFEGjtupH05o="
+                    class="img-fluid" alt="">
+            </div>
+            <div class="col-xl-4 col-md-6 g-0">
+                <img src="https://media.istockphoto.com/photos/lion-in-high-grass-picture-id494856046?b=1&k=20&m=494856046&s=170667a&w=0&h=bn3edOnQHL935cnRimyaOvBFlkT0U1arzqWGPTumxcM="
+                    class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="display-3">grid alignment</h1>
+        <h1 class="display-5">align items</h1>
+
+        <!-- align-items-center to align the item inside the row to center -->
+        <div class="row align-items-center">
+            <div class="col-3 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione, vero
+                exercitationem doloremque veritatis enim dolor cum. Corrupti necessitatibus magni nesciunt, nemo maiores
+                cupiditate reprehenderit adipisci ut facilis mollitia, minima repellat odio obcaecati voluptate.</div>
+            <div class="col-3 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, incidunt ipsa
+                corrupti aspernatur distinctio similique? Nulla dolorem modi minus aut quasi animi iusto architecto
+                praesentium, voluptas odio, voluptates hic asperiores explicabo amet incidunt provident!</div>
+            <div class="col-3 bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate minima
+                aliquid consectetur maxime alias, explicabo natus sint ullam, unde sit repellat aperiam distinctio nemo.
+                Numquam autem cupiditate pariatur necessitatibus? Quo, laudantium maiores sapiente aliquid optio
+                voluptates ex hic voluptatum pariatur illo numquam earum accusantium deleniti cupiditate praesentium
+                commodi et ducimus exercitationem sit nostrum deserunt. Vel amet iure quod cumque perspiciatis.</div>
+
+            <!-- align-self-end is used to align only the 4th div to the end   -->
+            <div class="col-3 bg-success align-self-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt ad quis atquae magni, quia quam animi, iusto sapiente consequatur asperiores blanditiis
+                cupiditate dolore ullam
+                expedita a nisi, id labore aspernatur illo quod! Officiis!</div>
+        </div>
+        <h1 class="display-5">Justify content</h1>
+        <!-- we can use flex box justify-content property (see in bootstrap website) -->
+        <div class="row border justify-content-xl-between justify-content-md-center">
+            <div class="col-4 bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+                cupiditate soluta eligendi ipsam quod tempora nisi a saepe praesentium fuga inventore tempore atque eos
+                dolorum nam, vitae amet minus beatae rerum magni labore ducimus quam. Natus maxime ullam tenetur nihil?
+            </div>
+            <div class="col-4 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+                cupiditate soluta eligendi ipsam quod tempora nisi a saepe praesentium fuga inventore tempore atque eos
+                dolorum nam, vitae amet minus beatae rerum magni labore ducimus quam. Natus maxime ullam tenetur nihil?
+            </div>
+
+        </div>
+</body>
+
+</html>

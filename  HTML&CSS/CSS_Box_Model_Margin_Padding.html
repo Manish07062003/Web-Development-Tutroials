@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Margin and Padding</title>
+    <style>
+        body{
+            background-color: rgb(176, 234, 238);
+        }
+        .container{
+            background-color: burlywood;
+            border:3px solid crimson;
+            /* padding: 50px; to make the content compress from all sides we can also compress only from one side by giving top,bottom,etc. */
+            /* padding: 23px 56px 6px 10px; padding: top right bottom left; */
+            padding: 34px 19px;/*padding: y(top/bottom) x(left/right)*/
+            margin: 10px; /*same as padding margins also have the above properties*/
+            border-radius: 25px;
+            width: 350px;/*width changes when we change the padding or margin or border values*/
+            box-sizing: border-box;/*if we dont want to change the width if we change the padding or margin or border value we use box-sizing*/ 
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Box Model, Margin and Padding</h1>
+    <h1>Box Model</h1>
+    <img src="https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png" alt="no image found" width="600px" >
+    <div class="container">
+        <h3>This is my first heading</h3>
+        <p id="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, libero. Est similique odit, asperiores tempore in assumenda, neque rem inventore fuga quibusdam, porro debitis odio!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my second heading</h3>
+        <p id="secondpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, libero. Est similique odit, asperiores tempore in assumenda, neque rem inventore fuga quibusdam, porro debitis odio!</p>
+    </div>
+    
+    <div class="container">
+        <h3>This is my third heading</h3>
+        <p id="thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, libero. Est similique odit, asperiores tempore in assumenda, neque rem inventore fuga quibusdam, porro debitis odio!</p>
+    </div>
+</body>
+</html>

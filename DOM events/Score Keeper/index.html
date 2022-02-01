@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
+    <style>
+        .winner {
+            color: green;
+        }
+
+        .loser {
+            color: red;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mainHeading {
+            font-size: 1.2rem;
+            margin-top: 0;
+            margin-bottom: 0.3rem;
+            margin-left: 0.5rem;
+        }
+
+        .border {
+            border: 1px solid grey;
+        }
+        #p1btn{
+            background-color: green;
+            color: white;
+            padding: 0.5rem;
+        }
+        #p2btn{
+            background-color: blue;
+            color: white;
+            padding: 0.5rem;
+        }
+        #resetbtn{
+            background-color: red;
+            color: white;
+            padding: 0.5rem;
+        }
+        .footer{
+            display: flex;
+
+        }
+        button{
+            width: 100%;
+        }
+        .content{
+            padding-bottom: 1rem;
+            padding-left: 0.8rem;
+        }
+        #boldText{
+            font-weight: bold;
+        }
+        h3{
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            margin-top: 0.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header border">
+            <img src="ping_pong_image.jpeg" alt="">
+            <h1 id="mainHeading">Ping Pong Score Keeper</h1>
+        </div>
+        <div class="content border">
+            <h3><span id="p1Display">0</span> to <span id="p2Display">0</span></h3>
+            <p id="btnInfo">Use the buttons below to keep score.</p>
+            <span id="boldText">Playing to</span>
+            <select id="playto">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+        </div>
+        <div class="footer">
+            <button id="p1btn">+1 Player One</button>
+            <button id="p2btn">+1 Player Two</button>
+            <button id="resetbtn">Reset</button>
+        </div>
+    </div>
+    </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

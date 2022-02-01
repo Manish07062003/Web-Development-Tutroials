@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        h3 {
+            font-size: 3rem;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        section {
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 300px;
+            justify-content: center;
+            padding: 0px 30px;
+        }
+
+        .navigation {
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            font-size: 20px;
+        }
+
+        header::before {
+            background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            /* makes the image dim so that the text on it is visible */
+        }
+
+        li {
+            list-style: none;
+            padding: 14px 26px;
+        }
+
+        /* section::before { */
+        /* to insert content before section element */
+        /* content: "This is content"; */
+        /* } */
+
+        p {
+            text-align: center;
+        }
+        a{
+            border: 2px solid red;
+            text-decoration: none;
+            margin: 2px;
+            padding: 2px;
+            background-color: black;
+            color: white;
+        }
+        a:hover{
+            background-color: thistle;
+            color: blueviolet;
+        }
+        a:active{ /* when we click on the anchor the color changes to burlywood (active is when we click) */
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+            <a href="#">Register here</a>
+        </nav>
+        <section>
+            <h3>Welcome to coding world</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus amet possimus aliquam molestias cumque,
+                fugit at sequi veritatis placeat quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat veniam maxime commodi iure at vitae natus laboriosam ex id assumenda.</p>
+        </section>
+    </header>
+    <hr>
+</body>
+
+</html>

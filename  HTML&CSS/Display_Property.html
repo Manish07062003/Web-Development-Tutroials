@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        img{
+            width: 100px;
+            margin: auto;
+            display: block;/*it sets the img element to block so that we can adjust the it to the center or anywhere if we set it to inline we cannot adjust it*/
+        }
+        h3{
+            font-family: cursive;
+            margin: 0px;
+            text-align: center;
+        }
+        /*since header is a block element margin auto doesnt work so we should first adjust the width of header then margin auto*/
+        header{
+            border: 2px solid red;
+            /* width: 160px; */
+            /* margin: auto; */
+        }
+        .box{
+            border:2px solid grey;
+            background-color: ivory;
+            margin: 5px;
+            padding: 8px;
+            width: 300px;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: auto;
+            width: 1000px;
+        }
+    </style>
+</head>
+<body>
+  <h1>CSS Display property</h1>  
+  <header>
+    <img src="https://th.thgim.com/news/national/ktaphs/article35045128.ece/ALTERNATES/FREE_660/twitter1" alt="no image found">
+    <h3>Welcome to My Blog.</h3>
+  </header>
+  <div class="container">
+      <div class="box">
+          <h4 class="heading">Heading</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem tenetur facilis voluptatem voluptas quidem. Cumque nulla, natus ipsum nobis enim aliquid? Omnis mollitia ullam tempora vel non voluptatem sapiente. Cum accusamus esse, explicabo porro pariatur quam deserunt unde dolor ut itaque nostrum repudiandae aliquam?</p>
+      </div>
+        <div class="box">
+          <h4 class="heading">Heading</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem tenetur facilis voluptatem voluptas quidem. Cumque nulla, natus ipsum nobis enim aliquid? Omnis mollitia ullam tempora vel non voluptatem sapiente. Cum accusamus esse, explicabo porro pariatur quam deserunt unde dolor ut itaque nostrum repudiandae aliquam?</p>
+      </div>
+      <div class="box">
+          <h4 class="heading">Heading</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem tenetur facilis voluptatem voluptas quidem. Cumque nulla, natus ipsum nobis enim aliquid? Omnis mollitia ullam tempora vel non voluptatem sapiente. Cum accusamus esse, explicabo porro pariatur quam deserunt unde dolor ut itaque nostrum repudiandae aliquam?</p>
+      </div>
+    </div>
+</body>
+</html>

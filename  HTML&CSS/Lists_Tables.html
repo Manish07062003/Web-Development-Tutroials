@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and Tables</title>
+</head>
+
+<body>
+    <!-- Lists -->
+    <h1>Lists</h1>
+    <ul>
+        <li>This is my first unordered item</li>
+        <li>This is my second unordered item</li>
+        <li>This is my third unordered item</li>
+        <li>This is my fourth unordered item</li>
+    </ul>
+    <!-- for different shapes search in google -->
+    <ul type="square">
+        <li>This is my first unordered item</li>
+        <li>This is my second unordered item</li>
+        <li>This is my third unordered item</li>
+        <li>This is my fourth unordered item</li>
+        <!-- for Sublists -->
+        <li>
+            <ul>
+                <li>Sublist1</li>
+                <li>Sublist2</li>
+                <li>Sublist3</li>
+            </ul>
+        </li>
+        <li>This is my fifth unordered item</li>
+    </ul>
+    <ol>
+        <li>This is my first ordered item</li>
+        <li>This is my second ordered item</li>
+        <li>This is my third ordered item</li>
+        <li>This is my fourth ordered item</l>
+    </ol>
+    <ol type="A">
+        <li>This is my first ordered item</li>
+        <li>This is my second ordered item</li>
+        <li>This is my third ordered item</li>
+        <li>This is my fourth ordered item</l>
+    </ol>
+
+
+
+    <!-- Tables -->
+    <!-- <td></td> defines a single cell in the data  -->
+    <!-- <tr></tr> defines a row in the table  -->
+    <!-- <th></th> defines the header in the table  -->
+    <h1>Heaviest Birds Table</h1>
+    <Table>
+        <thead>
+            <tr>
+                <th>Animal Name</th>
+                <th>Average Mass</th>
+                <th>Maximum Mass</th>
+                <th>Flighted</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>104(230)</td>
+                <td>156.8(346)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90(200)</td>
+                <td>130(286)</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5(29.8)</td>
+                <td>39(86)</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </Table>
+    <h1>Another Table</h1>
+    <Table>
+        <thead>
+            <tr>
+                <th rowspan="2">Animal Name</th> <!--here rowspan combines 2 rows for animal name header -->
+                <th colspan="2">Average Mass</th> <!-- here colspan gives 2 columns to average mass header as sub headings -->
+                <th rowspan="2">Flighted</th>
+            </tr>
+            <tr>
+                <th>KG</th>
+                <th>LB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>104</td>
+                <td>230</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>200</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>29.8</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </Table>
+</body>
+
+</html>

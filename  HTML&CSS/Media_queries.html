@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            font-size: 72px;
+            text-align: center;
+            display: none;
+        }
+
+        /* Media queries are like if conditions in other programming languages */
+        /* search for media features in google for different media parameters */
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
+        @media only screen and (max-width:300px) {
+
+            /*this means when the media type is only screen and the width is between 0-300px then the display of box1 is block*/
+            #box1 {
+                display: block;
+                background-color: red;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+
+            /*this means when the width is between 300-500px then the display of box2 is block*/
+            #box2 {
+                display: block;
+                background-color: royalblue;
+            }
+        }
+
+        @media only screen and (min-width:500px)and (max-width:800px) {
+
+            /*this means when the width is between 500-800px then the display of box3 is block*/
+            #box3 {
+                display: block;
+                background-color: yellow;
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+
+            /*this means when the width is between 800px- then the display of box4 is block*/
+            #box4 {
+                display: block;
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Media Queries</h1>
+    <div class="box" id="box1">Mai ek iphone huh</div>
+    <div class="box" id="box2">Mai ek tablet huh</div>
+    <div class="box" id="box3">Mai ek desktop computer huh</div>
+    <div class="box" id="box4">Mai ek widescreen computer huh</div>
+</body>
+
+</html>

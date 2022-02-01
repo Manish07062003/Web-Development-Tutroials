@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: teal;
+            border: 2px solid;
+            font-weight: bolder;
+        }
+        div p{/*aplies for all the paragraphs inside div's */
+            color: thistle;
+            background-color: black;
+            font-weight: bold;
+        }
+        div > p{/*applies to only paragraphs which are right inside div*/
+            color: yellow ;
+            background-color: red;
+        }
+        div + p{/*applies for paragraphs whose previous sibling is div,in other words applies if p is right after div */
+            color: white;
+            font-style: italic;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+   <h1>More on CSS selectors</h1> 
+   <div class="container">
+       <div class="row">
+           <p>This a paragraph</p>
+           <ul>
+               <li class="item"><p>This is another paragraph inside ul</p></li>
+           </ul>
+       </div>
+       <p>This is another paragraph</p>
+   </div>
+   <p>This is outermost paragraph</p>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute, relative, fixed and sticky</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin: 2px;
+            background-color: #9cd3d3;
+        }
+
+        #sticky #middle {
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+        }
+
+        #middle {
+            background-color: #155263;
+        }
+
+        /* position:  static(by default), absolute, relative, fixed, sticky */
+        #static #middle {
+            position: static;
+            top: 100px;
+            /* nothing changes */
+        }
+
+        #relative #middle {
+            position: relative;
+            /* it is set relative to its normal position */
+            /* we can do top,bottom,right,left it leaves a space at its original position and then moves where ever we set it */
+            top: 20px;
+            left: 20px;
+        }
+
+        #absolute {
+            position: relative;
+        }
+
+        #absolute #middle {
+            position: absolute;
+            /*it is positioned relative to the nearest positioned ancestor,if an absolute positioned element has no positioned ancestors, it uses the document body */
+            top: 20px;
+            left: 2px;
+        }
+
+        #fixed #middle {
+            position: fixed;
+            /*is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.*/
+            top: 0px;
+            right: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Postition Property</h1>
+    <section id="static">
+        <h2>Static</h2>
+        <div></div>
+        <div id="middle"></div>
+        <div></div>
+    </section>
+    <section id="relative">
+        <h2>Relative</h2>
+        <div></div>
+        <div id="middle"></div>
+        <div></div>
+    </section>
+    <section id="absolute">
+        <h2>Absolute</h2>
+        <div></div>
+        <div id="middle"></div>
+        <div></div>
+    </section>
+    <section id="fixed">
+        <h2>Fixed</h2>
+        <div></div>
+        <div id="middle"></div>
+        <div></div>
+    </section>
+    <section id="sticky">
+        <h2>Sticky</h2>
+        <div id="middle"></div>
+    </section>
+</body>
+
+</html>

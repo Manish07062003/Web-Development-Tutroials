@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            border: 2px solid red;
+            margin: 23px 12px;
+            background-color: rgb(243, 229, 243);
+            
+                               /* Box shadows */
+
+            box-shadow: -9px -9px rgb(151, 127, 151);/* for upwards box-shadow: x-axis(inset) y-axis(inset) color; */ 
+            box-shadow: 5px 5px rgb(151, 127, 151);/* for downwards box-shadow: x-axis(offset) y-axis(offset) color; */ 
+            box-shadow: 8px 8px 10px rgb(151, 127, 151);/* for downwards box-shadow: x-axis(offset) y-axis(offset)  blur-radius color; */ 
+            box-shadow: 8px 8px 10px 5px rgb(151, 127, 151);/* for downwards box-shadow: x-axis(offset) y-axis(offset)  blur-radius spread-radius color; */ 
+        }
+        #card-1 h1{
+            text-shadow: 4px 3px 4px grey; /* text-shadow: x-axis(offset) y-axis(offset) blur-radius color; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>Card 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequatur blanditiis beatae omnis
+                natus mollitia eos eius sapiente pariatur voluptatem ipsam voluptate quidem doloremque dolore, enim
+                incidunt corrupti expedita tempore quis labore excepturi amet!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>Card 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nostrum ad assumenda iure dolores unde obcaecati corrupti qui molestiae minus doloribus dolorum, dolore tempora facilis iusto, odio ducimus culpa cupiditate quaerat debitis labore! Reprehenderit?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>Card 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsum perspiciatis eius asperiores, exercitationem corrupti, nihil perferendis dicta odit ipsam, magni a totam laudantium pariatur natus quisquam dolores? Ab temporibus aliquid necessitatibus nostrum deserunt?</p>
+        </div>
+    </div>
+</body>
+
+</html>

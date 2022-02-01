@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform property</title>
+    <style>
+        h1 {
+            background-color: #ffb5b5;
+            width: 300px;
+            border: 3px solid black;
+            padding: 0.7rem;
+            font-size: 1.8em;
+            text-align: center;
+            margin: 20px auto;
+            font-family: cursive;
+            font-weight: lighter;
+            color: white;
+        }
+
+        h1:nth-of-type(2n) {
+            background-color: #ff9a3c;
+        }
+
+        h1:nth-of-type(3n) {
+            background-color: #5585b5;
+        }
+
+        h1:nth-of-type(4n) {
+            background-color: #455d7a;
+        }
+
+        section:first-of-type h1:nth-of-type(3) {
+            /* to select the first section we use section:first-of-type */
+            transform-origin: bottom right;
+            transform: rotate(45deg);
+        }
+
+        section:nth-of-type(2) h1:nth-of-type(1) {
+            transform: scale(0.5)XXXXX;
+            /* the scale of x-axis and y-axis is halved*/
+        }
+
+        section:nth-of-type(2) h1:nth-of-type(2) {
+            transform: translateX(100px);
+            /* moves horizontally along x-axis same goes with transalteY - moves vertically along y-axis */
+        }
+
+        section:nth-of-type(2) h1:nth-of-type(4) {
+            transform: translate3d(100px, 10px, 200px);
+            /* moves in 3 dimensions */
+        }
+
+        section:first-of-type h1:nth-of-type(4) {
+            transform: skew(40deg);
+        }
+
+        section:nth-of-type(2) h1:nth-of-type(3) {
+            transform: rotate(-20deg) scale(1.1);
+        }
+
+        section:nth-of-type(2) {
+            transform: scale(0.65) rotate(30deg) translateX(300px);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Transform me!</h1>
+        <h1>Transform me!</h1>
+        <h1>Transform me!</h1>
+        <h1>Transform me!</h1>
+    </section>
+    <section>
+        <h1>Transform me!</h1>
+        <h1>Transform me!</h1>
+        <h1>Transform me!</h1>
+        <h1>Transform me!</h1>
+    </section>
+</body>
+
+</html>

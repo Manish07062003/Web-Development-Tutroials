@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+    <style>
+        /* attribute selector  */
+        input[type="email"]{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="#">
+        <div>
+            <label for="username">Enter Name:</label>
+            <input type="text" placeholder="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password">
+        </div>
+        <div>
+            Email: <input type="email" name="myemail" placeholder="Enter Email">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="mydate">
+        </div>
+        <br>
+        <div>
+            Date: <input type="number" name="mydate">
+        </div>
+
+        <!-- color picker  -->
+        <div>
+            Color: <input type="color">
+        </div>
+        <br>
+
+        <!-- Label-->
+        <label for="eligibility">Are you eligible</label>
+        <div>
+            <input type="checkbox" name="myeligibility" id="eligibility">
+        </div>
+        <div>
+            Are you eligible:<input type="checkbox" name="myeligibility">
+        </div>
+        <!-- For by default checked we use checked -->
+        <div>
+            Are you eligible:<input type="checkbox" name="myeligibility" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender"> Other <input
+                type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br> <textarea name="mytext" cols="50" rows="10"></textarea>
+        </div>
+        <br>
+        <!-- For selecting between options -->
+        <div>
+            <label for="phone">Phone</label>
+            <select name="myphone" id="phone">
+                <option value="iphone">Iphone</option>
+                <option value="samsung">Samsung</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+        <br>
+        <button>Submit</button>
+        <div>
+            Select:
+            <select name="select">
+                <option value="name">name</option>
+                <option value="name">birth</option>
+                <option value="name">male</option>
+            </select>
+        </div>
+        <div>
+            <input type="range" min="1" max="100">
+        </div>
+        <h2>Validation Demo</h2>
+        <label for="name">Enter Name:</label>
+        <input type="text" name="name" id="name" required>
+        <button>Submit now</button>
+    </form>
+</body>
+
+</html>

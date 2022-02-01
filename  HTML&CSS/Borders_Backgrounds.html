@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Borders and Backgrounds</title>
+    <style>
+        #firstpara{
+            background-color: pink;
+            height: 100px;
+            width: 350px;
+            /* border:width style color; */
+            border: 5px solid green;
+            /* border-width: 5px; /*thickness of border*/
+            /* border-color: green; /*border color */ 
+            /* border-style: solid; /*type of border */
+            border-radius: 30px; /*for rounded corners*/
+        }
+        #secondpara{
+            background-color: rgb(76, 230, 241);
+            height: 100px;
+            width: 350px;
+            /* border-top: width style color; */
+            border-top: 5px solid indigo;
+            border-right: 5px solid rgb(16, 66, 1);
+            border-bottom: 5px solid rgb(212, 5, 5);
+            border-left: 5px solid rgb(153, 230, 10);
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        #thirdpara{
+            height: 300px;
+            width: 550px;
+            background-image: url('https://icon-library.com/images/twitter-small-icon/twitter-small-icon-17.jpg');
+            border: 5px solid rgb(189, 16, 16);
+            background-repeat: no-repeat;/* for no repeatition of image  */
+            /* background-repeat: repeat-x;for repeatition of image in x-axis */
+            /* background-repeat: repeat-y;for repeatition of image in y-axis */
+            background-position:center center;/*background-position: x-axis y-axis;*/
+
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Height, Width, Borders and Backgrounds</h1>
+    <div>
+        <h3>First Heading</h3>
+    <p id="firstpara">This is my first paragraph</p>
+    </div>
+    <div>
+        <h3>Second Heading</h3>
+    <p id="secondpara">This is my second paragraph</p>
+    </div>
+    <div>
+        <h3>Third Heading</h3>
+    <p id="thirdpara">This is my third paragraph</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom properties</title>
+    <style>
+        /* the variables which we declare in the :root can be used anywhere */
+        :root {
+            --primary-color: ivory;
+            --danger-color: red;
+            --maxw: 332px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .box {
+
+            /* variables */
+
+            --box-color: ivory;
+            /* cannot be used outside .box */
+            /* to declare a variable we use --variable_name and then we can store anything in it */
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid ;
+            margin: 2px 10px;
+            box-shadow: 3px 3px 10px 5px var(--box-color);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            border: 3px solid red; 
+            margin: auto;/*to center the container*/
+            background-color: rgb(119, 114, 110);
+        }
+        body{
+            font-family: 'Ephesis', cursive;/*from google fonts website*/
+        }
+        .item{
+           border: 3px solid rgb(0, 0, 0); 
+           margin: 10px 1px;
+           padding: 10px;
+           background-color: rgb(175, 167, 167);
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #stationary{
+            /* float: left; */
+            clear: right;/*it does not allow any float left element to overlap on it*/
+            clear: both;/*it dose not allow any float element to overlap on it and this element comes after that*/
+            width: 100%;  
+        }
+        p,h3,h1{
+            text-align: center;/*to align the text in the element to the centre of the block*/
+            /* text-align: justify; */
+            /* there are left right alignment too  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Float, Clear and Alignment</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+           <p id="fruitpara" class="para">Lorem ipsum dolor sit amet. ipsum, dolor sit amet consectetur adipisicing elit. Facilis, facere? Qui, dolor! Impedit iste eos necessitatibus tempore dicta neque, libero nihil delectus expedita sed quia ipsum perferendis quae nobis magni?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eos modi distinctio quasi eius facilis ipsa pariatur amet. Aliquam, fugit officia voluptatum expedita, iste, sequi dolorem consequuntur possimus sunt alias fuga? Accusamus, unde debitis.
+           </p> 
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+           <p id="computerpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, facere? Qui, dolor! Impedit iste eos necessitatibus tempore dicta neque, libero nihil delectus expedita sed quia ipsum perferendis quae nobis magni?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores enim minus est at voluptatum velit! Tempore repellat aliquam dolorem illo ullam et, repudiandae eaque, animi modi non, praesentium optio expedita recusandae perferendis illum voluptate.
+           </p> 
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, facere? Qui, dolor! Impedit iste eos necessitatibus tempore dicta neque, libero nihil delectus expedita sed quia ipsum perferendis quae nobis magni?
+            </p> 
+        </div>
+    <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, facere? Qui, dolor! Impedit iste eos necessitatibus tempore dicta neque, libero nihil delectus expedita sed quia ipsum perferendis quae nobis magni?
+            </p> 
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating transitions in CSS</title>
+    <style>
+        #box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            background-color: blue;
+            /* transition-property: background-color; it will show the transition of color from blue to red within the given duration we can set any property */
+            /* transition-duration: 2s; */
+            /* transition-timing-function: ease-out; Same as animations and keyframes */
+            /* transition-delay: 2s; the transition starts after 2s of hovering on the box */
+
+                        /* Shorthand Property */
+
+            /* transition will only be applied for background-color */
+            transition: background-color 2s ease-in-out 2s; /* transition: property duration timing-function delay; */
+            /*transition will be applied for all */
+            transition: all 2s ease-in-out 0.5s; /* transition: property duration timing-function delay; */
+        }
+
+        #box:hover {
+            background-color: red;
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+            font: bolder;
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is CSS transitions tutorial</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        div img {
+            margin: 0px auto;
+            display: block;
+        }
+
+        .container {
+            height: 344px;
+            width: 100%;
+            border: 2px solid red;
+            /* initialise the container as flexbox */
+            display: flex;
+
+
+
+            /* Flex properties for flex container */
+
+
+            /* Flex Direction */
+
+            flex-direction: column;
+            /*the items will come down*/
+            flex-direction: column-reverse;
+            /*it will fill from downwards*/
+            flex-direction: row-reverse;
+            /*the items will fill from right*/
+            flex-direction: row;
+            /*by default it is row*/
+
+
+            /* Flex Wrap */
+
+            flex-wrap: nowrap;
+            /*it is by default nowrap*/
+            flex-wrap: wrap;
+            /*when we the width become smaller the items which are not fitting will go to the next row */
+            flex-wrap: wrap-reverse;
+            /*it will wrap in opposite direction*/
+
+            /* short hand */
+            flex-flow: row wrap;
+            /*instead of flex-direction and flex-wrap we use flex-flow:flex-direction flex-wrap*/
+
+
+            /* justify-content */
+
+            justify-content: center;
+            /*centers the items in the main axis*/
+            justify-content: space-between;
+            /*gives equal space only between the items*/
+            justify-content: space-evenly;
+            /*gives equal space for evry item including between the border and the item*/
+            justify-content: space-around;
+            /*gives equal margin to each item*/
+            justify-content: flex-end;
+            /* ends in the opposite direction */
+            /* by default it will be flex-start */
+
+
+            /* align-items  */
+
+            align-items: center;
+            /*it centers the items in the cross axis */
+            align-items: flex-end;
+            /*it goes to the opposite in the flexbox if it is in the top it goes to the bottom*/
+            align-items: flex-start;
+            /*by default it is flex-start*/
+            align-items: stretch;
+            /*when we use wrap and the ending item goes down if we use stretch it gives equal vertical space*/
+            align-items: baseline;
+            /* if the item are not equal in height or width is will align based on the baseline of the content inside the items */
+
+            /* align-content */
+            /* align-content only when flex-wrap is set */
+
+            align-content: center;
+            /* centers the entire content to the center by adjusting the space between them */
+            align-content: space-between;
+            /* gives equal space between the content */
+
+        }
+
+        /* align-self */
+
+        #item6 {
+            align-self: center;
+            /* aligns only item6 to the center */
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: wheat;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 2px;
+        }
+
+        /* #item1 {
+            /* order */
+            /* order: 4;Higher the order, later it shows in the container */
+            /* flex grow */
+            /* flex-grow: 1; takes all the additional space available */
+            /* flex-grow: 2; takes 2 times more additional space available than flex-grow: 1; */
+        /* } */
+
+        #item2 {
+            /* flex-shrink: 3;it will shrink 3 times more than the other items in the container */
+            flex-basis: 150px;
+            /* when flex-direction is set to row then flex-basis will control width
+            when flex-direction is set to colown then flex-basis will control height*/
+        }
+
+        #item3 {
+            flex: 1 0 344px;
+            /* it is the shorthand for flex-grow,flex-shrink,flex-basis
+            flex: flex-grow flex-shrink flex-basis*/
+            align-self: flex-end;
+            /*goes to the opposite border*/
+            align-self: center;
+            /*goes to the center of the flexbox*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="http://html5gamedevelopment.com/wp-content/uploads/2021/06/building-games-with-flexbox-terms.png"
+            alt="image not found">
+    </div>
+    <h1>Now Flexbox tutorial starts</h1>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div>
+    </div>
+</body>
+
+</html>

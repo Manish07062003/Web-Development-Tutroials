@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: 8px;
+        }
+
+        .container {
+            width: 233px;
+            margin: auto;
+        }
+
+        /*pesudo selectors*/
+
+        input[type="text"] {
+            /* applies only for input whose type is text*/
+            border: 2px solid red;
+        }
+
+        a[target='_blank'] {
+            /* applies only for those anchors whose target is set to _blank*/
+            color: yellowgreen;
+            font-size: 25px;
+        }
+
+        a[target='_self'] {
+            /* applies only for those anchors whose target is set to _self*/
+            color: blueviolet;
+            font-size: 25px;
+        }
+
+        /* nth pseudo selector */
+
+        li:nth-child(7) {
+            /*applies only for 3rd child(item)*/
+            color: brown;
+        }
+
+        /* we can use any formula it will auto fill from n=0 */
+        li:nth-child(2n+0) {
+            /*applies only for even child(item)*/
+            color: cyan;
+        }
+
+        li:nth-child(odd) {
+            /*applies only for odd child(item)*/
+            background-color: cornsilk;
+        }
+
+        li:nth-child(even) {
+            /*applies only for even child(item)*/
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Attribute and nth child pseudo selectors</h1>
+    <div class="container">
+        <h3><a href="http://google.com " target="_blank">Go to google</a></h3>
+        <h3><a href="http://facebook.com " target="_self">Go to facebook</a></h3>
+        <form action="#" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+            <li class="item" id="item-6">item6</li>
+            <li class="item" id="item-7">item7</li>
+            <li class="item" id="item-8">item8</li>
+            <li class="item" id="item-9">item9</li>
+            <li class="item" id="item-10">item10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

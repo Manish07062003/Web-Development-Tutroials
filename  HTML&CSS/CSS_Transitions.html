@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .circle {
+            width: 300px;
+            height: 300px;
+            background-color: #a2a8d3;
+            border: 2px solid black;
+            /* transition: property-name duration timing-function delay */
+            transition: background-color 2s ease-in , border-radius 5s;
+            /* for different transition-timing-functions search for easings.net */
+        }
+
+        .circle:hover {
+            border-radius: 50%;
+            border: 2px solid red;
+            background-color: #113f67;
+        }
+
+        section div {
+            height: 100px;
+            width: 100px;
+            background-color: #ff6f3c;
+            margin: 20px 0px;
+            transition: margin-left 3s;
+        }
+
+        section:hover div {
+            margin-left: 500px;
+        }
+
+        div:nth-of-type(1) {
+            transition-timing-function: ease-in;
+        }
+
+        div:nth-of-type(2) {
+            transition-timing-function: ease-out;
+        }
+
+        div:nth-of-type(3) {
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        div:nth-of-type(4) {
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transitions</h1>
+    <div class="circle"></div>
+    <h2>for different transition-timing-functions search for easings.net</h2>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+
+</html>

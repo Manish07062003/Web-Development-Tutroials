@@ -1,0 +1,9 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+article{
+    border: 2px solid red;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}

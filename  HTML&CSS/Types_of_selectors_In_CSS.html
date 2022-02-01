@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CSS Selectors</title>
+    <!-- element selector -->
+    <style>
+        /* each and every paragraph in the body will become the color which we select in the style  */
+        p{
+            color: red;
+            border: 2px solid rosybrown;
+        }
+    </style>
+    <!-- id selector -->
+    <!-- id is unique it cannot be used to multiple element -->
+    <style>
+        /* when we use identifier we use hashtag before identifier */
+        #para1{
+            color: yellowgreen;
+        }
+        #para2{
+            color: yellowgreen;
+        }
+    </style>
+    <!-- class selector -->
+    <style>
+        /* we can give multiple classes to one element  */
+        /* for classes we use full stop  */
+        .paracolor{
+            color: teal;
+        }
+        .parabgcolor{
+            background-color: rgb(238, 237, 167);
+        }
+    </style>
+    <!-- grouping selectors -->
+    <style>
+        #para3{
+            color: rgb(8, 47, 119);
+        }
+        .para3{
+            background-color: rgb(219, 172, 51);
+        }
+        footer,span{
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Types of CSS Selectors</h1>
+    <p>This is a simple paragraph to demonstrate css selectors</p>
+    <p id="para1">This is a another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <p id="para2">This is a another simple paragraph to demonstrate css selectors</p>
+    </div>
+    <p class="paracolor parabgcolor">This is a simple paragraph to demonstrate css selectors</p>
+    <p id="para3" class="para3">This is a simple paragraph to demonstrate css selectors</p>
+    <span>This is span</span>
+    <footer>This is Footer.</footer>
+</body>
+</html>
