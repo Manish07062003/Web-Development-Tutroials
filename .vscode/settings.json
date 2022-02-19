@@ -1,3 +1,6 @@
 {
-    "px-to-rem.px-per-rem": 15
+    "px-to-rem.px-per-rem": 15,
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
