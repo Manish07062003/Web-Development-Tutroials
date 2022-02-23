@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+    <style>
+        div,
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>New Product</h1>
+    <form action="/farms/<%= id %>/products" method="POST">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="name">
+        </div>
+        <div>
+            <label for="price">Price</label>
+            <input type="number" name="price" id="price" placeholder="price">
+        </div>
+        <div>
+            <label for="category">Category</label>
+            <select name="category" id="category">
+                <option value="fruit">fruit</option>
+                <option value="vegetable">vegetable</option>
+                <option value="dairy">dairy</option>
+            </select>
+        </div>
+        <button>Submit</button>
+    </form>
+    <a href="/farms">Back To All Farms</a>
+    <br>
+    <a href="/products">Back To All Products</a>
+</body>
+
+</html>
